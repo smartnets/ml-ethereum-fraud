@@ -1,0 +1,13 @@
+seed: 42
+test_size: 0.1
+batch_size: 4
+embedding:
+  num_walks: 200
+  dimension: 32
+  walk_length: 50
+  workers: 4
+  window: 10
+  min_count: 1
+
+model:
+  epochs: 2000

@@ -1,3 +1,7 @@
+# Custom for our project
+data/*
+!data/ground_truth.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +131,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore dynaconf secret files
+.secrets.*
