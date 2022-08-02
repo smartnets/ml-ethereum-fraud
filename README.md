@@ -29,9 +29,17 @@ chmod +x scripts/install-env.sh
 
 The configuration of the project is handled using the `params.yaml` file. It is recommended to add new information there if required and not hardcoding any values in the code.
 
+## WandB
+
+We will use Weights & Biases to track experiments.
+
+If you already have an account: run `wandb login`.
+
+If you don't have an account contact one of the team members to get one.
+
 ## Data
 
-Datasets need to be placed in the `data` directory under the appropiate name. For example, for the dataset in which both ends of the edges belong to the ground truth data, an edge file and a node file need to be placed in the `data` folder under the names: `both_ends_belong_edges.csv` and `both_ends_belong_nodes.csv`.
+Datasets need to be placed in the `data` directory under the appropriate name. For example, for the dataset in which both ends of the edges belong to the ground truth data, an edge file and a node file need to be placed in the `data` folder under the names: `both_ends_belong_edges.csv` and `both_ends_belong_nodes.csv`.
 
 The exact filename exacted for each dataset can be found inside the `src/datasets/variations/` folder.
 
