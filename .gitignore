@@ -1,4 +1,5 @@
 # Custom for our project
+wandb
 data/*
 !data/ground_truth.csv
 

@@ -6,3 +6,4 @@ dynaconf==3.1.9
 networkx==2.8.5
 black==22.6.0
 node2vec==0.4.5
+wandb==0.12.21
