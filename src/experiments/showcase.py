@@ -8,6 +8,7 @@ from src.config import settings as st
 from src.datasets.ground_truth import get_ground_truth
 from src.datasets.build_graph import BaseGraph
 from src.embeddings.node2vec_plain import Node2VecPlain
+from src.embeddings.gnn_sage import GNNSageEmbedding
 from src.models.index import MODELS
 from src.utils.clf_utils import upsample
 
@@ -21,7 +22,8 @@ g.load_from_file(st.dataset)
 
 # %%
 
-emb = Node2VecPlain(g)
+# emb = Node2VecPlain(g)
+emb = GNNSageEmbedding(g)
 
 # %%
 embedding = emb.embedding
@@ -58,6 +60,7 @@ clf.fit(X_train, y_train)
 
 # %%
 y_pred = clf.predict(X_test)
+print(f"Total of predicted positive: {y_pred.sum()} out of {y_test.shape[0]}")
 
 
 # %%
