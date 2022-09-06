@@ -27,8 +27,8 @@ def parse_node(line):
     addr = parts[0]
 
     features = {
-        "isECR": bool(parts[1]),
-        "isMiner": bool(parts[-1]),
+        "isECR": float(bool(parts[1])),
+        "isMiner": float(bool(parts[-1])),
         "fradulent": parts[-2] == "Dodgy",
     }
     return addr, features
